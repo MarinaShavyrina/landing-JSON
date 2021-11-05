@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="top-header">
+            <div class="wrapper top-header-wrapper">
+                <div class="top-header-left">
+                    <ul class="top-header-left-list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="top-header-right">
+                    <ul class="top-header-right-list">
+                        <li><img src="img/phone-header.png" alt="phone-header" class="phone-header-img">
+                            <p>8 (964) 89 99 119</p>
+                        </li>
+                        <li><a href="#" class="delivery-link"><img src="img/delivery-icon.png" alt="delivery"
+                                    class="delivery-img">
+                                <p>Доставка</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="middle-header">
+                <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+                <input type="search" class="search" placeholder="Поиск">
+                <div class="middle-header-left">
+                    <a href="#"><img src="img/like-list.png" alt="like-list"></a>
+                    <a href="#" class="btn-cart"><img src="img/bag.png" alt="bag"></a>
+                    <a href="#"><img src="img/profile-icon.png" alt="profile"></a>
+                    <div class="cart-block invisible"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="bottom-header">
+                <ul class="bottom-header-list">
+                    <li class="bottom-header-list-item">
+                        <a href="#">
+                            <img src="img/kitchen-icon.png" alt="kitchen">
+                            <p>Кухни</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/bedroom-icon.png" alt="bedroom">
+                            <p>Спальни</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/livingroom-icon.png" alt="livingroom">
+                            <p>Гостиные</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/closet-icon.png" alt="closet">
+                            <p>Прихожие</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/office-icon.png" alt="office">
+                            <p>Офисная мебель</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/childrensroom-icon.png" alt="childrensroom">
+                            <p>Детская</p>
+                        </a>
+                    </li>
+                    <li class="bottom-header-sale">
+                        <a href="#">
+                            <p>Акция</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/etc.png" alt="etc">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="slider">
+        <div class="wrapper wrapper-slider">
+            <button id="prev" class="left slider-button" onclick="slide(-1)">&lt;</button>
+
+            <div class="slider-info">
+                <h1 class="slider-info-heading">Loft Мебель</h1>
+                <p class="slider-info-text">Современная и удобная мебель</p>
+                <a href="#" class="slider-info-link">Смотреть каталог</a>
+            </div>
+
+            <div>
+                <img id="img" src="img/banner-1.jpg" alt="slider">
+
+            </div>
+
+            <button id="next" class="right slider-button" onclick="slide(1)"> &gt;</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="wrapper">
+            <p class="wrapper-products-text">Хиты продаж</p>
+            <div class="products"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper footer">
+            <div class="footer-top">
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li><a href="#">Кухни</a></li>
+                        <li><a href="#">Спальни</a></li>
+                        <li><a href="#">Гостиные</a></li>
+                        <li><a href="#">Прихожие</a></li>
+                        <li><a href="#">Офисная мебель</a></li>
+                        <li><a href="#">Детская</a></li>
+                        <li><a href="#">Шкафы</a></li>
+                        <li><a href="#">Матрасы</a></li>
+                        <li><a href="#">Мягкая мебель</a></li>
+                    </ul>
+                </div>
+                <div class="footer-adress">
+                    <p class="footer-logo">LM</p>
+                    <p class="footer-adress-block">
+                        г. Анапа, Анапское шоссе, <br>30 Ж/К Черное море
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-special">
+                    <ul class="footer-special-list">
+                        <li class="footer-sale"><a href="#">Акция</a></li>
+                        <li><a href="#">Новинки</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <ul class="footer-contacts-list">
+                        <li><img src="img/phone.png" alt="phone">
+                            <span>8 (964) 89 99 119</span>
+                        </li>
+                        <li><a href="#" class="footer-contacts-inst"><img src="img/inst.png" alt="instagram">
+                                <span>INSTAGRAM</span></a>
+                        </li>
+                        <li><img src="img/mail.png" alt="mail">
+                            <span>mebel_loft_anapa@mail.ru</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
